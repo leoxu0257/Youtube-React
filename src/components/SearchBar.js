@@ -10,6 +10,7 @@ state={term:''};
     onFormSubmit= event =>{
         event.preventDefault(); // Don't refreash
         // TODO: Make sure we call callback from parent component
+        this.props.onFormSubmit(this.state.term);
     };
 
     render() {
