@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Youtube Player using React
+
+![image] (https://github.com/leoxu0257/Youtube-React/blob/master/pic/Screen%20Shot%20.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
