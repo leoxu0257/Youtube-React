@@ -38,9 +38,9 @@ class App extends React.Component{
                 />
             <div className="ui grid">
                 <div className="ui row">
-                    {/* <div>
+                    <div>
                         I have {this.state.videos.length} videos.
-                    </div> */}
+                    </div>
                     <div className="eleven wide column">
                         <VideoDetail 
                             video ={this.state.selectedVideo} 
