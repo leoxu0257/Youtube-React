@@ -37,10 +37,10 @@ class App extends React.Component{
                     onFormSubmit={this.onTermSubmit} 
                 />
             <div className="ui grid">
-                <div className="ui row">
                     <div>
                         I have {this.state.videos.length} videos.
                     </div>
+                <div className="ui row">
                     <div className="eleven wide column">
                         <VideoDetail 
                             video ={this.state.selectedVideo} 
