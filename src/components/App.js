@@ -7,6 +7,7 @@ import VideoDetail from './VideoDetail';
 const App = () => {
     const [videos, setVideos] = useState([]);
     const [selectedVideo, setSelectedVideo] = useState(null);
+
     useEffect(()=>{
         onTermSubmit('food')
     },[]);
@@ -20,11 +21,6 @@ const App = () => {
 
             setVideos(response.data.items);
             setSelectedVideo(response.data.items[0]);
-    };
-    const onVideoSelect= video =>{
-        console.log('from the app',video);
-        // this.setState({ selectedVideo: video });
-        setSelectedVideo(video);
     };
 
     return( 
@@ -44,7 +40,8 @@ const App = () => {
                 </div>
                 <div className="five wide column">
                     <VideoList 
-                        onVideoSelect={onVideoSelect} 
+                        // onVideoSelect={(video)=> setSelectedVideo(video)}
+                        onVideoSelect={ setSelectedVideo }
                         videos={ videos }
                     />
                 </div>
